@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Twitter/Twitter.h>
 
 @interface MKPViewController : UIViewController
-
+@property (nonatomic, retain) IBOutlet UITextView *deliveryAddress;
+@property (nonatomic, retain) IBOutlet UITextView *message;
+@property (nonatomic, retain) NSString *tweetMessage;
+-(IBAction)clickAddFromCamera;
+-(IBAction)clickAddFromLibrary;
+-(IBAction)clickTweet;
 @end
+
